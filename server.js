@@ -10,7 +10,7 @@ const publicUrl = process.env.PUBLIC_URL || `http://localhost:${port}`;
 const here = path.dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
-app.use(express.static(here));
+app.get("/", (_req, res) => res.sendFile(path.join(here, "index.html")));\napp.get("/styles.css", (_req, res) => res.sendFile(path.join(here, "styles.css")));\napp.get("/app.js", (_req, res) => res.sendFile(path.join(here, "app.js")));
 
 app.get("/api/products", (_req, res) => res.json(publicProducts));
 
