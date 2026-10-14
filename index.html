@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Perfumes árabes y decants seleccionados. Encontrá tu próxima historia en T&D Perfums.">
+  <title>T&D Perfums — Donde la libertad se vuelve aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">Perfumes que cuentan historias <span>✦</span> Envíos a toda Argentina</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="T&D Perfums, inicio">
+      <img src="/assets/logo.jpg" alt="Logo T&D Perfums: Donde la libertad se vuelve aroma">
+      <span class="brand-name">T&amp;D <i>PERFUMS</i></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#coleccion">La colección</a><a href="#decants">Decants</a><a href="#nosotros">Nuestra esencia</a>
+    </nav>
+    <a class="bag-link" href="#coleccion" aria-label="Ver colección">Explorar <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="pyramid pyramid-back"></div><div class="pyramid pyramid-front"></div>
+        <div class="dune"></div><div class="star star-one">✦</div><div class="star star-two">✦</div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> PERFUMERÍA DE AUTOR · ARGENTINA</p>
+        <h1>Donde la libertad<br>se vuelve <em>aroma.</em></h1>
+        <p class="hero-intro">Fragancias con carácter, inspiradas en tierras lejanas. Encontrá esa que se siente como vos.</p>
+        <a class="button button-light" href="#coleccion">Descubrir la colección <span>→</span></a>
+        <p class="hero-note">PERFUMES ÁRABES &nbsp;·&nbsp; DECANTS SELECCIONADOS</p>
+      </div>
+      <div class="hero-index"><span>01</span><i></i> UNA EXPERIENCIA SENSORIAL</div>
+    </section>
+
+    <section class="intro-strip" id="nosotros">
+      <p>Un aroma puede llevarte lejos.<br><em>El tuyo empieza acá.</em></p>
+      <span class="strip-mark">✳</span>
+      <p class="strip-detail">Una curaduría de perfumes intensos y decants para descubrir sin apuro.</p>
+    </section>
+
+    <section class="collection section-wrap" id="coleccion">
+      <div class="section-heading">
+        <div><p class="eyebrow dark"><span></span> ELEGIDOS PARA VOS</p><h2>La colección</h2></div>
+        <p class="section-description">Clásicos que dejan huella.<br>Descubrimientos que se quedan.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar perfumes">
+        <button class="filter active" data-filter="todos">Todos <span>05</span></button>
+        <button class="filter" data-filter="arabes">Árabes</button>
+        <button class="filter" data-filter="nicho">Nicho</button>
+        <button class="filter" data-filter="designer">Diseñador</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="decants" id="decants">
+      <div class="decant-symbol">T<span>&amp;</span>D</div>
+      <div><p class="eyebrow"><span></span> TU PRÓXIMO FAVORITO</p><h2>Probalo.<br><em>Sentilo tuyo.</em></h2>
+        <p>Descubrí nuevas fragancias en formato decant. La forma más personal de encontrar tu próximo aroma.</p>
+        <a href="#coleccion" class="text-link">Encontrá tu decant <span>→</span></a>
+      </div>
+      <div class="decant-orbit orbit-a"></div><div class="decant-orbit orbit-b"></div>
+    </section>
+
+    <section class="promise section-wrap">
+      <article><span>✦</span><h3>Curaduría especial</h3><p>Fragancias elegidas por su carácter y personalidad.</p></article>
+      <article><span>◈</span><h3>Descubrí a tu ritmo</h3><p>Decants para probar cada nota en tu propia piel.</p></article>
+      <article><span>⌁</span><h3>Una compra simple</h3><p>Próximamente, pagá en pesos con Mercado Pago.</p></article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-brand" href="/">T&amp;D <i>PERFUMS</i></a>
+    <p>Donde la libertad se vuelve aroma <span>✦</span> Argentina</p>
+    <small>© 2026 T&amp;D Perfums</small>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
